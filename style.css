@@ -1,0 +1,154 @@
+:root {
+    /* Primary */
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark_raspberry: hsl(332, 51%, 32%);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --rose_white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light_grey: hsl(30, 18%, 87%);
+    --wenge_brown: hsl(30, 10%, 34%);
+    --dark_charcoal: hsl(24, 5%, 18%);
+
+    /* Font Families */
+    --outfit: 'Outfit', sans-serif;
+    --young: 'Young Serif', serif;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-size: 16px;       
+    font-family: var(--outfit);
+    color: var(--wenge_brown);
+    background-color: var(--eggshell);    
+}
+
+main {
+    background-color: var(--white);
+}
+
+.recipeimg {
+    width: 100vw;
+    height: 20vh;
+    background-image: url('/assets/images/image-omelette.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 1rem;
+}
+
+.containertext {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+.mtitle {
+    text-align: center;
+    font-family: var(--young);
+    margin-bottom: 1rem;
+}
+
+.pintro {
+    font-family: var(--outfit);
+    padding-bottom: 1rem;
+}
+
+.preptime {
+    background-color: var(--rose_white);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: .5rem;
+}
+
+.preparation_time {
+    font-family: var(--outfit);
+    font-size: .75rem;
+    color: var(--dark_raspberry);
+}
+
+ul>li::marker {
+    color: var(--dark_raspberry);
+}
+
+.listp{
+    margin-left: 2rem;
+    margin-bottom: .375rem;
+}
+
+.ingredients {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--dark_raspberry);
+    font-family: var(--young);
+}
+
+.ingredientslist {
+    margin-left: 2rem;
+    margin-bottom: .375rem;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.instructions {
+    color: var(--dark_raspberry);
+    margin-bottom: 1rem;
+    font-family: var(--young);
+}
+
+.steps::marker {
+    color: var(--dark_raspberry);
+}
+
+.steps {
+    margin-left: 2rem;
+    margin-bottom: .375rem;
+}
+
+.nutrition {
+    color: var(--dark_raspberry);
+    margin-bottom: 1rem;
+    font-family: var(--young);
+}
+
+.nutritionp {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+td {
+    border-bottom: 1px solid var(--light_grey);
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.number {
+    color: var(--dark_raspberry);
+}
+
+
+@media (min-width:1440px){
+    body {
+        width: 50vw;
+    }
+
+   .recipeimg {
+    border-radius: 1rem;
+   }
+}
