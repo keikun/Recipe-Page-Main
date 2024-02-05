@@ -36,10 +36,7 @@ main {
 
 .recipeimg {
     width: 100vw;
-    height: 20vh;
-    background-image: url('/assets/images/image-omelette.jpeg');
-    background-repeat: no-repeat;
-    background-size: contain;
+    height: 100%;
     margin-bottom: 1rem;
 }
 
@@ -67,6 +64,7 @@ main {
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: .5rem;
+    border-radius: 1rem;
 }
 
 .preparation_time {
@@ -145,10 +143,21 @@ td {
 
 @media (min-width:1440px){
     body {
-        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    main {
+        width: 40vw;
+        border-radius: 1.875rem;
     }
 
    .recipeimg {
-    border-radius: 1rem;
+    width: 40vw;
+    padding: 2rem;
+    border-radius: 3.125rem;
    }
 }
